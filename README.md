@@ -28,5 +28,4 @@ Checked against readingmuseum.org.uk in September 2026: free entry (suggested £
 
 ## Before going live
 
-- Add Shed's address or a map link in the "Make a day of it" section.
 - Add an `og:image` (a 1200×630 PNG) so links look good when shared.

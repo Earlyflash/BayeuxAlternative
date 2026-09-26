@@ -294,3 +294,4 @@ footer { margin-top: 2rem; }
 .hours h3 { font-size: 1.25rem; color: var(--woad); }
 .hours p { margin: 0; }
 @media (max-width: 820px) { .hours { grid-template-columns: 1fr; } }
+.slot.feature a { color: var(--ink); }
