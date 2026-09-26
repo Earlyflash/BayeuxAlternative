@@ -28,4 +28,5 @@ Checked against readingmuseum.org.uk in September 2026: free entry (suggested £
 
 ## Before going live
 
+- The Shed photo is hotlinked from theshedcafe.co.uk. Better to save a copy as `public/img/shed.jpg` (with Pete's OK) and point the `<img>` at that.
 - Add an `og:image` (a 1200×630 PNG) so links look good when shared.
