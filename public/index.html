@@ -50,72 +50,188 @@
 </section>
 
 <figure class="strip" aria-labelledby="strip-caption">
-  <div class="strip-scroll">
-    <svg viewBox="0 0 1400 260" role="img" aria-labelledby="strip-title">
-      <title id="strip-title">Embroidered scene: a very long queue outside the British Museum, and one happy person alone in Reading holding a toastie.</title>
-      <defs>
-        <g id="person">
-          <circle cx="0" cy="-62" r="9"/>
-          <path d="M0 -53 L0 -24 M0 -45 L-12 -32 M0 -45 L12 -34 M0 -24 L-10 0 M0 -24 L9 0"/>
-        </g>
-        <g id="slumped">
-          <circle cx="4" cy="-58" r="9"/>
-          <path d="M2 -49 L-2 -22 M1 -42 L-9 -26 M1 -42 L8 -27 M-2 -22 L-11 0 M-2 -22 L6 0"/>
-        </g>
-      </defs>
+  <div class="strip-scroll" tabindex="0" aria-label="The Reading Tapestry, scrollable">
+<svg viewBox="0 0 3300 340" role="img" aria-labelledby="strip-title">
+<title id="strip-title">An embroidered strip in the style of the Bayeux Tapestry. Scene one: a huge queue outside the British Museum. Scene two: one person escapes to Tottenham Court Road. Scene three: they ride the Elizabeth line, drawn as a Norman longship. Scene four: they photograph the tapestry in Reading Museum while Halley's comet passes overhead. Scene five: Pete hands them a toastie at Shed.</title>
+<defs>
+  <g id="person"><circle cx="0" cy="-62" r="9"/><path d="M0 -53 L0 -24 M0 -45 L-12 -32 M0 -45 L12 -34 M0 -24 L-10 0 M0 -24 L9 0"/></g>
+  <g id="slumped"><circle cx="4" cy="-58" r="9"/><path d="M2 -49 L-2 -22 M1 -42 L-9 -26 M1 -42 L8 -27 M-2 -22 L-11 0 M-2 -22 L6 0"/></g>
+  <g id="hero"><circle cx="0" cy="-62" r="9"/><path d="M-11 -66 L0 -86 L11 -66 Z" fill="currentColor"/><path d="M0 -66 L0 -57 M0 -53 L0 -24 M0 -45 L-12 -32 M0 -45 L12 -34 M0 -24 L-10 0 M0 -24 L9 0"/></g>
+  <g id="walker"><circle cx="0" cy="-62" r="9"/><path d="M-11 -66 L0 -86 L11 -66 Z" fill="currentColor"/><path d="M0 -66 L0 -57 M0 -53 L2 -24 M1 -45 L-14 -36 M1 -45 L16 -52 M2 -24 L-14 0 M2 -24 L18 -2"/></g>
+  <g id="snapper"><circle cx="0" cy="-62" r="9"/><path d="M-11 -66 L0 -86 L11 -66 Z" fill="currentColor"/><path d="M0 -66 L0 -57 M0 -53 L0 -24 M0 -45 L14 -58 M0 -45 L10 -56 M0 -24 L-10 0 M0 -24 L9 0"/></g>
+  <g id="sitter"><circle cx="0" cy="-48" r="9"/><path d="M0 -39 L0 -14 L18 -14 L18 0 M0 -31 L12 -22"/></g>
+  <pattern id="band" width="64" height="36" patternUnits="userSpaceOnUse">
+    <rect width="64" height="36" class="band-bg"/>
+    <path d="M2 34 L16 2" class="band-bar"/>
+    <path d="M30 22 C34 12 44 12 48 20 L56 16 M34 22 L36 28 M44 22 L44 28" class="band-beast"/>
+  </pattern>
+  <filter id="wool" x="-2%" y="-5%" width="104%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3"/>
+    <feDisplacementMap in="SourceGraphic" scale="3.5"/>
+  </filter>
+</defs>
+<rect x="0" y="0" width="3300" height="36" fill="url(#band)"/>
+<rect x="0" y="304" width="3300" height="36" fill="url(#band)"/>
+<path d="M0 37 H3300 M0 303 H3300" class="stitch"/>
+<text x="430" y="74" class="cap" text-anchor="middle">HIC LONDINIENSES DVAS HORAS EXSPECTANT</text>
+<text x="1000" y="74" class="cap" text-anchor="middle">HIC VNVS FVGIT</text>
+<text x="1560" y="74" class="cap" text-anchor="middle">HIC IN LINEA ELIZABETHAE VEHITVR</text>
+<text x="2330" y="74" class="cap" text-anchor="middle">HIC TAPETVM SPECTAT</text>
+<text x="3000" y="74" class="cap" text-anchor="middle">HIC PETRVS PANEM TOSTVM DAT</text>
+<g filter="url(#wool)">
+<g class="building ochre">
+  <path d="M20 130 L130 92 L240 130 Z"/>
+  <path d="M30 135 H230 M42 138 V278 M72 138 V278 M102 138 V278 M130 138 V278 M158 138 V278 M188 138 V278 M218 138 V278 M18 282 H242"/>
+</g>
+<text x="130" y="118" class="name small" text-anchor="middle">MVSEVM</text>
+<use href="#person" x="270" y="282" class="w2"/>
+<use href="#person" x="302" y="282" class="w1"/>
+<use href="#person" x="334" y="282" class="w1"/>
+<use href="#person" x="366" y="282" class="w1"/>
+<use href="#slumped" x="398" y="282" class="w2"/>
+<use href="#person" x="430" y="282" class="w1"/>
+<use href="#person" x="462" y="282" class="w4"/>
+<use href="#person" x="494" y="282" class="w2"/>
+<use href="#person" x="526" y="282" class="w4"/>
+<use href="#person" x="558" y="282" class="w1"/>
+<use href="#person" x="590" y="282" class="w1"/>
+<use href="#slumped" x="622" y="282" class="w4"/>
+<use href="#person" x="654" y="282" class="w2"/>
+<use href="#person" x="686" y="282" class="w2"/>
+<use href="#person" x="718" y="282" class="w4"/>
+<use href="#person" x="750" y="282" class="w1"/>
+<text x="700" y="162" class="aside" text-anchor="middle">…all the way</text>
+<text x="700" y="182" class="aside" text-anchor="middle">to Holborn</text>
+<g class="tree"><path d="M850 282 C844 232 860 202 850 142"/><path d="M850 202 C824 186 820 164 830 142 M850 182 C876 170 880 150 872 126 M850 142 C842 122 850 106 858 100"/></g>
+<use href="#walker" x="950" y="282" class="hero"/>
+<text x="950" y="186" class="name" text-anchor="middle">TV</text>
+<path d="M1060 282 V180" class="post"/><rect x="972" y="152" width="170" height="30" rx="3" class="sign"/>
+<text x="1057" y="172" class="sign-text" text-anchor="middle">TOTTENHAM CT RD</text>
+<text x="960" y="162" class="aside" text-anchor="middle">(sod this)</text>
+<g class="tree"><path d="M1190 282 C1184 232 1200 202 1190 142"/><path d="M1190 202 C1164 186 1160 164 1170 142 M1190 182 C1216 170 1220 150 1212 126 M1190 142 C1182 122 1190 106 1198 100"/></g>
+<path d="M1210 276 H1930" class="rail"/>
+<path d="M1220 272 L1230 280" class="sleeper"/>
+<path d="M1248 272 L1258 280" class="sleeper"/>
+<path d="M1276 272 L1286 280" class="sleeper"/>
+<path d="M1304 272 L1314 280" class="sleeper"/>
+<path d="M1332 272 L1342 280" class="sleeper"/>
+<path d="M1360 272 L1370 280" class="sleeper"/>
+<path d="M1388 272 L1398 280" class="sleeper"/>
+<path d="M1416 272 L1426 280" class="sleeper"/>
+<path d="M1444 272 L1454 280" class="sleeper"/>
+<path d="M1472 272 L1482 280" class="sleeper"/>
+<path d="M1500 272 L1510 280" class="sleeper"/>
+<path d="M1528 272 L1538 280" class="sleeper"/>
+<path d="M1556 272 L1566 280" class="sleeper"/>
+<path d="M1584 272 L1594 280" class="sleeper"/>
+<path d="M1612 272 L1622 280" class="sleeper"/>
+<path d="M1640 272 L1650 280" class="sleeper"/>
+<path d="M1668 272 L1678 280" class="sleeper"/>
+<path d="M1696 272 L1706 280" class="sleeper"/>
+<path d="M1724 272 L1734 280" class="sleeper"/>
+<path d="M1752 272 L1762 280" class="sleeper"/>
+<path d="M1780 272 L1790 280" class="sleeper"/>
+<path d="M1808 272 L1818 280" class="sleeper"/>
+<path d="M1836 272 L1846 280" class="sleeper"/>
+<path d="M1864 272 L1874 280" class="sleeper"/>
+<path d="M1892 272 L1902 280" class="sleeper"/>
+<path d="M1920 272 L1930 280" class="sleeper"/>
+<path d="M1520 160 V92" class="mast"/>
+<path d="M1466 96 Q1520 88 1574 96 L1568 146 Q1520 140 1472 146 Z" class="sail"/>
+<path d="M1482 96 L1480 144" class="sail-stripe"/>
+<path d="M1500 96 L1498 144" class="sail-stripe"/>
+<path d="M1518 96 L1516 144" class="sail-stripe"/>
+<path d="M1536 96 L1534 144" class="sail-stripe"/>
+<path d="M1554 96 L1552 144" class="sail-stripe"/>
+<path d="M1572 96 L1570 144" class="sail-stripe"/>
+<path d="M1250 160 H1800 V212 H1250 Z" class="carriage"/>
+<path d="M1238 210 H1812 L1796 250 Q1525 266 1256 250 Z" class="hull"/>
+<path d="M1242 214 C1204 204 1198 160 1220 138 C1232 126 1246 136 1238 148" class="prow"/>
+<path d="M1806 214 C1850 206 1856 160 1846 118" class="prow"/>
+<path d="M1846 118 C1850 100 1876 98 1886 112 L1866 116 L1874 126 L1852 124 Z" class="dragon"/>
+<circle cx="1862" cy="110" r="2.5" class="eye"/>
+<circle cx="1286" cy="186" r="17" class="shield s0"/><circle cx="1286" cy="186" r="4" class="boss"/>
+<circle cx="1342" cy="186" r="17" class="shield s1"/><circle cx="1342" cy="186" r="4" class="boss"/>
+<circle cx="1398" cy="186" r="17" class="shield s2"/><circle cx="1398" cy="186" r="4" class="boss"/>
+<circle cx="1454" cy="186" r="17" class="shield s0"/><circle cx="1454" cy="186" r="4" class="boss"/>
+<circle cx="1510" cy="186" r="19" class="window"/>
+<g class="hero" transform="translate(1510 244) scale(.7)"><circle cx="0" cy="-62" r="9"/><path d="M-11 -66 L0 -86 L11 -66 Z" fill="currentColor"/></g>
+<circle cx="1566" cy="186" r="17" class="shield s2"/><circle cx="1566" cy="186" r="4" class="boss"/>
+<circle cx="1622" cy="186" r="17" class="shield s0"/><circle cx="1622" cy="186" r="4" class="boss"/>
+<circle cx="1678" cy="186" r="17" class="shield s1"/><circle cx="1678" cy="186" r="4" class="boss"/>
+<circle cx="1734" cy="186" r="17" class="shield s2"/><circle cx="1734" cy="186" r="4" class="boss"/>
+<circle cx="1290" cy="268" r="9" class="wheel"/>
+<circle cx="1360" cy="268" r="9" class="wheel"/>
+<circle cx="1430" cy="268" r="9" class="wheel"/>
+<circle cx="1500" cy="268" r="9" class="wheel"/>
+<circle cx="1570" cy="268" r="9" class="wheel"/>
+<circle cx="1640" cy="268" r="9" class="wheel"/>
+<circle cx="1710" cy="268" r="9" class="wheel"/>
+<circle cx="1780" cy="268" r="9" class="wheel"/>
+<text x="1680" y="128" class="aside" text-anchor="middle">(no changes)</text>
+<text x="1510" y="148" class="name" text-anchor="middle">TV</text>
+<g class="tree"><path d="M2000 282 C1994 232 2010 202 2000 142"/><path d="M2000 202 C1974 186 1970 164 1980 142 M2000 182 C2026 170 2030 150 2022 126 M2000 142 C1992 122 2000 106 2008 100"/></g>
+<g class="building brick">
+  <path d="M2040 282 V104 L2066 70 L2092 104 V282 Z"/>
+  <path d="M2092 282 V150 L2150 118 L2208 150 V282 Z"/>
+  <path d="M2140 282 V236 H2162 V282"/>
+</g>
+<circle cx="2066" cy="128" r="11" class="clock"/><path d="M2066 128 V121 M2066 128 L2071 131" class="hands"/>
+<text x="2160" y="112" class="name small" text-anchor="middle">READINGA</text>
+<rect x="2240" y="122" width="400" height="44" class="mini"/>
+<path d="M2240 130 H2640 M2240 158 H2640" class="mini-border"/>
+<path d="M2256 156 L2261 138 L2266 156 M2261 138 V134" class="mini-fig c2"/>
+<path d="M2282 156 L2287 138 L2292 156 M2287 138 V134" class="mini-fig c0"/>
+<path d="M2308 156 L2313 138 L2318 156 M2313 138 V134" class="mini-fig c1"/>
+<path d="M2334 156 L2339 138 L2344 156 M2339 138 V134" class="mini-fig c2"/>
+<path d="M2360 156 L2365 138 L2370 156 M2365 138 V134" class="mini-fig c0"/>
+<path d="M2386 156 L2391 138 L2396 156 M2391 138 V134" class="mini-fig c1"/>
+<path d="M2412 156 L2417 138 L2422 156 M2417 138 V134" class="mini-fig c2"/>
+<path d="M2438 156 L2443 138 L2448 156 M2443 138 V134" class="mini-fig c0"/>
+<path d="M2464 156 L2469 138 L2474 156 M2469 138 V134" class="mini-fig c1"/>
+<path d="M2490 156 L2495 138 L2500 156 M2495 138 V134" class="mini-fig c2"/>
+<path d="M2516 156 L2521 138 L2526 156 M2521 138 V134" class="mini-fig c0"/>
+<path d="M2542 156 L2547 138 L2552 156 M2547 138 V134" class="mini-fig c1"/>
+<path d="M2568 156 L2573 138 L2578 156 M2573 138 V134" class="mini-fig c2"/>
+<path d="M2594 156 L2599 138 L2604 156 M2599 138 V134" class="mini-fig c0"/>
+<path d="M2620 156 L2625 138 L2630 156 M2625 138 V134" class="mini-fig c1"/>
+<path d="M2424 96 L2472 82 M2424 96 L2476 96 M2424 96 L2472 108 M2424 96 L2466 74" class="comet-tail"/>
+<circle cx="2422" cy="96" r="8" class="comet"/>
+<text x="2560" y="102" class="name small" text-anchor="middle">ISTI MIRANT STELLA</text>
+<use href="#snapper" x="2330" y="282" class="hero"/>
+<rect x="2340" y="206" width="10" height="15" rx="1" class="phone"/>
+<text x="2330" y="186" class="name" text-anchor="middle">TV</text>
+<use href="#sitter" x="2600" y="282" class="w3"/>
+<path d="M2600 268 V282" class="chair"/>
+<text x="2460" y="242" class="aside" text-anchor="middle">(photos allowed)</text>
+<text x="2460" y="262" class="aside" text-anchor="middle">(nobody behind you)</text>
+<g class="tree"><path d="M2700 282 C2694 232 2710 202 2700 142"/><path d="M2700 202 C2674 186 2670 164 2680 142 M2700 182 C2726 170 2730 150 2722 126 M2700 142 C2692 122 2700 106 2708 100"/></g>
+<g class="building sage">
+  <path d="M2960 282 V150 L3100 106 L3240 150 V282 Z"/>
+  <path d="M3190 128 V92 H3212 V136"/>
+</g>
+<rect x="3050" y="128" width="100" height="28" rx="3" class="sign"/>
+<text x="3100" y="149" class="sign-text big" text-anchor="middle">SHED</text>
+<use href="#person" x="3030" y="282" class="w2"/>
+<text x="3030" y="186" class="name" text-anchor="middle">PETRVS</text>
+<use href="#person" x="3150" y="282" class="w1"/>
+<text x="3150" y="186" class="name" text-anchor="middle">LYDIA</text>
+<rect x="2990" y="238" width="190" height="44" class="counter"/>
+<use href="#hero" x="2880" y="282" class="hero"/>
+<text x="2880" y="186" class="name" text-anchor="middle">TV</text>
+<rect x="2904" y="228" width="26" height="16" rx="3" class="toastie"/><path d="M2910 232 L2924 240 M2916 230 L2928 238" class="grill"/>
+<text x="2800" y="162" class="aside" text-anchor="middle">(very good toastie)</text>
+</g>
+</svg>
 
-      <!-- tapestry-style caption bar -->
-      <text x="330" y="40" class="cap">HIC LONDINIENSES DVAS HORAS EXSPECTANT</text>
-      <text x="1175" y="40" class="cap" text-anchor="middle">HIC NEMO EXSPECTAT</text>
-
-      <!-- British Museum, roughly -->
-      <g class="building">
-        <path d="M20 110 L125 70 L230 110 Z"/>
-        <path d="M30 115 H220 M40 118 V215 M70 118 V215 M100 118 V215 M130 118 V215 M160 118 V215 M190 118 V215 M210 118 V215 M20 218 H230"/>
-      </g>
-
-      <!-- the queue -->
-      <g class="queue">
-        <use href="#person" x="260" y="218" class="w1"/>
-        <use href="#slumped" x="295" y="218" class="w2"/>
-        <use href="#person" x="330" y="218" class="w3"/>
-        <use href="#person" x="362" y="218" class="w4"/>
-        <use href="#slumped" x="398" y="218" class="w1"/>
-        <use href="#person" x="432" y="218" class="w2"/>
-        <use href="#person" x="466" y="218" class="w4"/>
-        <use href="#slumped" x="500" y="218" class="w3"/>
-        <use href="#person" x="534" y="218" class="w1"/>
-        <use href="#person" x="568" y="218" class="w2"/>
-        <use href="#slumped" x="604" y="218" class="w4"/>
-        <use href="#person" x="638" y="218" class="w3"/>
-        <use href="#person" x="672" y="218" class="w1"/>
-        <use href="#slumped" x="708" y="218" class="w2"/>
-        <use href="#person" x="742" y="218" class="w4"/>
-        <use href="#person" x="776" y="218" class="w3"/>
-        <use href="#slumped" x="812" y="218" class="w1"/>
-        <use href="#person" x="846" y="218" class="w2"/>
-      </g>
-      <text x="880" y="200" class="aside">…and so on,</text>
-      <text x="880" y="220" class="aside">into Holborn</text>
-
-      <!-- the dividing tree, very much in the Bayeux style -->
-      <g class="tree">
-        <path d="M1000 218 C995 170 1010 150 1000 100"/>
-        <path d="M1000 150 C975 135 970 115 980 95 M1000 130 C1025 120 1030 100 1022 80 M1000 100 C992 80 1000 65 1008 60"/>
-      </g>
-
-      <!-- Reading: one person, a toastie, a phone -->
-      <g class="building small">
-        <path d="M1240 120 H1370 V218 H1240 Z M1240 120 L1305 88 L1370 120"/>
-        <path d="M1285 218 V180 H1325 V218"/>
-      </g>
-      <use href="#person" x="1150" y="218" class="w3 happy"/>
-      <rect x="1158" y="174" width="20" height="13" rx="2" class="toastie"/>
-      <rect x="1128" y="176" width="10" height="16" class="phone"/>
-      <text x="1175" y="248" class="aside" text-anchor="middle">(has a toastie)</text>
-    </svg>
   </div>
-  <figcaption id="strip-caption">Scene 1: the choice before you. <span class="scroll-hint">Scroll along, like a proper tapestry &rarr;</span></figcaption>
+  <figcaption id="strip-caption">
+    <span>The Reading Tapestry, scenes I&ndash;V. Drag or scroll along, like the real thing.</span>
+    <span class="strip-nav">
+      <button type="button" data-dir="-1" aria-label="Scroll back">&larr;</button>
+      <button type="button" data-dir="1" aria-label="Scroll on">&rarr;</button>
+    </span>
+  </figcaption>
 </figure>
 
 <section id="versus" class="versus">
@@ -347,5 +463,28 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var el = document.querySelector('.strip-scroll');
+  if (!el) return;
+  document.querySelectorAll('.strip-nav button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      el.scrollBy({ left: Number(b.dataset.dir) * el.clientWidth * 0.8, behavior: 'smooth' });
+    });
+  });
+  var down = false, startX = 0, startLeft = 0;
+  el.addEventListener('pointerdown', function (e) {
+    if (e.pointerType !== 'mouse') return;
+    down = true; startX = e.clientX; startLeft = el.scrollLeft;
+    el.classList.add('dragging');
+  });
+  window.addEventListener('pointermove', function (e) {
+    if (down) el.scrollLeft = startLeft - (e.clientX - startX);
+  });
+  window.addEventListener('pointerup', function () {
+    down = false; el.classList.remove('dragging');
+  });
+})();
+</script>
 </body>
 </html>

@@ -154,33 +154,106 @@ main > section {
   border-top: 3px dashed var(--woad);
   border-bottom: 3px dashed var(--woad);
 }
-.strip-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.strip svg { display: block; min-width: 900px; width: 100%; max-height: 320px; }
+.strip-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  scrollbar-color: var(--terracotta) var(--linen-dark);
+}
+.strip-scroll.dragging { cursor: grabbing; user-select: none; }
+.strip svg { display: block; height: 340px; width: auto; max-width: none; }
+@media (max-width: 720px) { .strip svg { height: 260px; } }
 .strip svg * { stroke-linecap: round; stroke-linejoin: round; }
-.strip .cap { font-family: var(--caps); font-size: 22px; letter-spacing: .08em; fill: var(--ink); }
+
+.strip .band-bg { fill: var(--linen-dark); }
+.strip .band-bar { stroke: var(--woad); stroke-width: 4; fill: none; }
+.strip .band-beast { stroke: var(--terracotta); stroke-width: 3; fill: none; }
+.strip .stitch { stroke: var(--woad); stroke-width: 3; stroke-dasharray: 8 6; fill: none; }
+
+.strip .cap { font-family: var(--caps); font-size: 24px; letter-spacing: .1em; fill: var(--ink); }
+.strip .name { font-family: var(--caps); font-size: 15px; letter-spacing: .08em; fill: var(--terracotta); }
+.strip .name.small { font-size: 13px; fill: var(--ink-soft); }
 .strip .aside { font-family: var(--display); font-style: italic; font-size: 17px; fill: var(--ink-soft); }
-.strip .building path { fill: none; stroke: var(--ink-soft); stroke-width: 4; }
-.strip .building path:first-child { fill: var(--ochre); fill-opacity: .35; }
-.strip .building.small path:first-child { fill: var(--terracotta); fill-opacity: .3; }
-.strip use { fill: none; stroke-width: 5; }
-.strip use circle { fill: currentColor; }
+
+.strip .building path { stroke: var(--ink-soft); stroke-width: 4; fill: none; }
+.strip .building.ochre path:first-child { fill: var(--ochre); fill-opacity: .35; }
+.strip .building.brick path:not(:last-child) { fill: var(--terracotta); fill-opacity: .35; }
+.strip .building.sage path:first-child { fill: var(--sage); fill-opacity: .35; }
+.strip .clock { fill: var(--linen); stroke: var(--ink-soft); stroke-width: 3; }
+.strip .hands { stroke: var(--ink); stroke-width: 2; }
+
+.strip use, .strip .hero { fill: none; stroke-width: 5; }
+.strip use circle, .strip .hero circle { fill: currentColor; }
 .strip .w1 { stroke: var(--terracotta); color: var(--terracotta); }
 .strip .w2 { stroke: var(--woad); color: var(--woad); }
 .strip .w3 { stroke: var(--sage); color: var(--sage); }
 .strip .w4 { stroke: var(--ochre); color: var(--ochre); }
+.strip .hero { stroke: var(--terracotta); color: var(--terracotta); }
+
 .strip .tree path { fill: none; stroke: var(--moss); stroke-width: 6; }
+.strip .post { stroke: var(--ink-soft); stroke-width: 5; }
+.strip .sign { fill: var(--woad); stroke: var(--ink); stroke-width: 2; }
+.strip .sign-text { font-family: var(--body); font-weight: 800; font-size: 13px; letter-spacing: .06em; fill: var(--linen); }
+.strip .sign-text.big { font-size: 20px; letter-spacing: .2em; }
+
+.strip .rail { stroke: var(--ink-soft); stroke-width: 4; }
+.strip .sleeper { stroke: var(--ink-soft); stroke-width: 3; }
+.strip .carriage { fill: #6950a1; fill-opacity: .8; stroke: var(--ink); stroke-width: 3; }
+.strip .hull { fill: var(--woad); stroke: var(--ink); stroke-width: 3; }
+.strip .prow { fill: none; stroke: var(--woad); stroke-width: 8; }
+.strip .dragon { fill: var(--terracotta); stroke: var(--ink); stroke-width: 2; }
+.strip .eye { fill: var(--linen); }
+.strip .mast { stroke: var(--ink-soft); stroke-width: 5; }
+.strip .sail { fill: var(--ochre); stroke: var(--ink); stroke-width: 3; }
+.strip .sail-stripe { stroke: var(--terracotta); stroke-width: 6; }
+.strip .shield { stroke: var(--ink); stroke-width: 2; }
+.strip .shield.s0 { fill: var(--ochre); }
+.strip .shield.s1 { fill: var(--terracotta); }
+.strip .shield.s2 { fill: var(--sage); }
+.strip .boss { fill: var(--ink); }
+.strip .window { fill: var(--linen); stroke: var(--ink); stroke-width: 2; }
+.strip .wheel { fill: var(--ink-soft); }
+
+.strip .mini { fill: var(--linen); stroke: var(--woad); stroke-width: 3; }
+.strip .mini-border { stroke: var(--woad); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.strip .mini-fig { fill: none; stroke-width: 2.5; }
+.strip .mini-fig.c0 { stroke: var(--terracotta); }
+.strip .mini-fig.c1 { stroke: var(--sage); }
+.strip .mini-fig.c2 { stroke: var(--woad); }
+.strip .comet { fill: var(--ochre); stroke: var(--terracotta); stroke-width: 2; }
+.strip .comet-tail { stroke: var(--ochre); stroke-width: 3; fill: none; }
+.strip .chair { stroke: var(--ink-soft); stroke-width: 4; }
+
+.strip .counter { fill: var(--ochre); stroke: var(--ink); stroke-width: 3; }
 .strip .toastie { fill: var(--ochre); stroke: var(--terracotta); stroke-width: 3; }
+.strip .grill { stroke: var(--terracotta); stroke-width: 2; }
 .strip .phone { fill: var(--ink); }
+
 .strip figcaption {
   max-width: 1100px;
   margin: 0 auto;
   padding: .5rem 16px .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   font-family: var(--display);
   font-style: italic;
   color: var(--ink-soft);
 }
-.scroll-hint { display: none; }
-@media (max-width: 900px) { .scroll-hint { display: inline; } }
+.strip-nav { display: flex; gap: .5rem; flex: none; }
+.strip-nav button {
+  font: 800 1.1rem/1 var(--body);
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--ink);
+  background: var(--linen);
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  cursor: pointer;
+}
+.strip-nav button:hover { background: var(--ochre); }
+.strip-nav button:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
 
 /* Scoreboard */
 .section-intro { max-width: var(--measure); color: var(--ink-soft); font-style: italic; margin-top: 0; }
