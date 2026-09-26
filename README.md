@@ -22,8 +22,11 @@ npx wrangler deploy
 
 `wrangler.toml` points at `public/` and serves `404.html` for missing pages. Security and cache headers are in `public/_headers`.
 
+## Facts
+
+Checked against readingmuseum.org.uk in September 2026: free entry (suggested £5 donation), open Tue–Fri 10–4 and Sat 10–5, closed Sun/Mon/bank holidays, guided tours £10 (Tue & Thu 2.30pm, Sat 2pm), and the gallery may close on weekdays 10am–2.15pm for school workshops during the Year of the Normans. Re-check these before big pushes.
+
 ## Before going live
 
 - Add Shed's address or a map link in the "Make a day of it" section.
-- Check the opening days, tour price and tour times against Reading Museum's own site.
 - Add an `og:image` (a 1200×630 PNG) so links look good when shared.
