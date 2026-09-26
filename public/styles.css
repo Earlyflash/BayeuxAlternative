@@ -170,7 +170,7 @@ main > section {
 .strip .band-beast { stroke: var(--terracotta); stroke-width: 3; fill: none; }
 .strip .stitch { stroke: var(--woad); stroke-width: 3; stroke-dasharray: 8 6; fill: none; }
 
-.strip .cap { font-family: var(--caps); font-size: 24px; letter-spacing: .1em; fill: var(--ink); }
+.strip .cap { font-family: var(--caps); font-size: 24px; letter-spacing: .06em; fill: var(--ink); }
 .strip .name { font-family: var(--caps); font-size: 15px; letter-spacing: .08em; fill: var(--terracotta); }
 .strip .name.small { font-size: 13px; fill: var(--ink-soft); }
 .strip .aside { font-family: var(--display); font-style: italic; font-size: 17px; fill: var(--ink-soft); }
@@ -385,3 +385,9 @@ footer { margin-top: 2rem; }
   .slot.feature { grid-template-columns: 1fr; }
   .shed-photo { max-width: 16rem; margin-top: .8rem; }
 }
+.strip .smile { stroke: var(--linen); stroke-width: 2; fill: none; }
+.strip .bunting-line { stroke: var(--ink-soft); stroke-width: 2; fill: none; }
+.strip .flag { stroke: var(--ink); stroke-width: 1.5; }
+.strip .flag.f0 { fill: var(--terracotta); }
+.strip .flag.f1 { fill: var(--ochre); }
+.strip .flag.f2 { fill: var(--sage); }
