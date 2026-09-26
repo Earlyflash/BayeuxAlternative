@@ -24,7 +24,7 @@ npx wrangler deploy
 
 ## Facts
 
-Checked against readingmuseum.org.uk in September 2026: free entry (suggested £5 donation), open Tue–Fri 10–4 and Sat 10–5, closed Sun/Mon/bank holidays, guided tours £10 (Tue & Thu 2.30pm, Sat 2pm), and the gallery may close on weekdays 10am–2.15pm for school workshops during the Year of the Normans. Re-check these before big pushes.
+Checked against readingmuseum.org.uk in September 2026: free entry (suggested £5 donation), open Tue–Fri 10–4 and Sat 10–5, closed Sun/Mon/bank holidays, guided tours £12 (Tue & Thu 2.30pm, Sat 2pm), and the gallery may close on weekdays 10am–2.15pm for school workshops during the Year of the Normans. Re-check these before big pushes.
 
 ## Before going live
 
