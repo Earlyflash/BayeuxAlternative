@@ -1,13 +1,9 @@
 name = "the-other-tapestry"
 compatibility_date = "2026-09-01"
-main = "src/index.js"
 
 [assets]
 directory = "./public"
-binding = "ASSETS"
 not_found_handling = "404-page"
-# Run the Worker for every request so it can redirect www before assets are served
-run_worker_first = true
 
 # Workers Logs and metrics in the Cloudflare dashboard (Workers & Pages > the-other-tapestry > Observability)
 [observability]
