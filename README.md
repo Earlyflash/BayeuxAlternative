@@ -32,6 +32,8 @@ Checked in September 2026.
 
 **Not yet confirmed:** that photography is allowed in Reading's Bayeux Gallery.
 
+**To check:** Reddit visitors report a two-hour queue on the day at the British Museum, even with timed tickets. If that holds up, put the in-person queue back in the scoreboard, hero and strip caption alongside the nine-hour online queue.
+
 ## Before going live
 
 - Add an `og:image` (a 1200×630 PNG) so links look good when shared.
