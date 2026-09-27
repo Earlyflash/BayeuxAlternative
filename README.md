@@ -24,15 +24,19 @@ npx wrangler deploy
 
 ## Facts
 
-Checked in September 2026.
+Last checked 27 September 2026.
 
-**Reading Museum:** free entry (suggested £5 donation), open Tue–Fri 10–4 and Sat 10–5, closed Sun/Mon/bank holidays. Guided tours £12 (Tue & Thu 2.30pm, Sat 2pm). The gallery may close on weekdays 10am–2.15pm for school workshops during the Year of the Normans. The copy hangs as 25 panels with captions along the length.
+**Reading Museum** ([opening times](https://www.readingmuseum.org.uk/your-visit/opening-times), [Bayeux Gallery](https://www.readingmuseum.org.uk/your-visit/what-see/bayeux-gallery), [tours](https://www.readingmuseum.org.uk/whats-on/bayeux-tapestry-tours)):
+- Free entry, suggested £5 donation. Two minutes' walk from Reading station.
+- Open Tue–Fri 10–4, Sat 10–5. Closed Sun, Mon, bank holidays and Christmas to New Year; open on the Monday of February and October half terms.
+- In term time the Bayeux Gallery may close on weekdays 10am–2.15pm for school workshops; quieter after 2.30pm. The museum publishes a closure calendar.
+- Guided tours £12, Tue & Thu 2.30pm, Sat 2pm, allow 90 minutes. Almost every date sold out until March 2027.
+- Still photography allowed without flash or tripod, for personal use.
+- Abbey Ruins: free, dawn to dusk, 5–10 minutes' walk through Forbury Gardens. Henry I founded Reading Abbey in 1121.
 
-**British Museum:** on show 10 Sep 2026 – 11 Jul 2027. Timed tickets only, no walk-ins; sold out to 31 Dec 2026 after an online queue of up to nine hours. Jan–Mar 2027 tickets go on sale 21 Oct 2026. Timed groups walk a one-way route in about 40 minutes, with projected animations. Photography banned up close since the first week, but allowed from the upper level.
+**British Museum:** on show 10 Sep 2026 – 11 Jul 2027. Timed tickets only, sold out to 31 Dec 2026 after an online queue of up to nine hours; Jan–Mar 2027 tickets go on sale 21 Oct 2026. Ticket holders have reported queuing over two hours to get in, some were turned away, and the museum apologised. Photography banned up close, allowed from the upper level.
 
-**Not yet confirmed:** that photography is allowed in Reading's Bayeux Gallery.
-
-**To check:** Reddit visitors report a two-hour queue on the day at the British Museum, even with timed tickets. If that holds up, put the in-person queue back in the scoreboard, hero and strip caption alongside the nine-hour online queue.
+**Independents:** Sweeney & Todd (10 Castle St, nearly 50 years), Shed (8 Merchants Place), Blue Collar (Market Place, Wed & Fri 11.30–2.30), The Sound Machine (24 Harris Arcade), C.U.P. (7 Blagrave St and 53 St Mary's Butts), Lincoln Coffee House (60 Kings Rd). Workhouse Coffee on King Street is reported closed, so it's no longer listed.
 
 ## Before going live
 
