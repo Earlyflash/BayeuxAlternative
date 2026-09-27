@@ -370,21 +370,10 @@ footer { margin-top: 2rem; }
 .slot.feature a { color: var(--ink); }
 .hours h3 a { color: inherit; }
 
-/* Shed photo, pinned to the itinerary like a snapshot */
-.slot.feature { grid-template-columns: 6.5rem 1fr 15rem; align-items: start; }
-.shed-photo {
-  margin: 0;
-  background: #f6f0e1;
-  padding: .5rem .5rem .3rem;
-  box-shadow: 3px 3px 0 var(--ink);
-  transform: rotate(-3deg);
-}
-.shed-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.shed-photo figcaption { font-family: var(--display); font-style: italic; font-size: .95rem; text-align: center; padding-top: .25rem; }
-@media (max-width: 720px) {
-  .slot.feature { grid-template-columns: 1fr; }
-  .shed-photo { max-width: 16rem; margin-top: .8rem; }
-}
+/* Lunch picks in the itinerary */
+.picks { margin: .5rem 0 0; padding-left: 1.1rem; display: grid; gap: .35rem; }
+.picks li { max-width: var(--measure); }
+
 .strip .smile { stroke: var(--linen); stroke-width: 2; fill: none; }
 .strip .bunting-line { stroke: var(--ink-soft); stroke-width: 2; fill: none; }
 .strip .flag { stroke: var(--ink); stroke-width: 1.5; }
